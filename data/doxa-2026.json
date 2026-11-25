@@ -1,0 +1,367 @@
+{
+  "Game of the Year": {
+    "event": "KXGAMEAWARDS-2026",
+    "source": "https://doxa.pro/events/the-game-awards-game-of-the-year",
+    "quotedAt": "2026-11-25T00:36:03.911Z",
+    "percent": {
+      "Grand Theft Auto 6": 93,
+      "The Legend of Zelda: Ocarina of Time": 6,
+      "Resident Evil Requiem": 2,
+      "Control Resonant": 1,
+      "Phantom Blade Zero": 1,
+      "007 First Light": 1
+    }
+  },
+  "Best Game Direction": {
+    "event": "KXGAMEAWARDSBGD-2026",
+    "source": "https://doxa.pro/events/game-awards-best-game-direction",
+    "quotedAt": "2026-11-24T06:24:25.360Z",
+    "percent": {
+      "Grand Theft Auto 6": 83,
+      "Control Resonant": 11,
+      "Resident Evil Requiem": 5,
+      "Pragmata": 3,
+      "Phantom Blade Zero": 2
+    }
+  },
+  "Best Narrative": {
+    "event": "KXGAMEAWARDS-BNAR",
+    "source": "https://doxa.pro/events/2026-game-awards-best-narrative",
+    "quotedAt": "2026-11-24T20:02:56.497Z",
+    "percent": {
+      "Grand Theft Auto 6": 77,
+      "The Blood of Dawnwalker": 14,
+      "007 First Light": 6,
+      "Resident Evil Requiem": 4,
+      "Control Resonant": 3
+    }
+  },
+  "Best Art Direction": {
+    "event": "KXGAMEAWARDS-26BART",
+    "source": "https://doxa.pro/events/game-awards-best-art-direction",
+    "quotedAt": "2026-11-24T23:21:06.586Z",
+    "percent": {
+      "Control Resonant": 49,
+      "Grand Theft Auto 6": 27,
+      "The Legend of Zelda: Ocarina of Time": 21,
+      "Mouse: P.I. For Hire": 1,
+      "Phantom Blade Zero": 1
+    }
+  },
+  "Best Score and Music": {
+    "event": "KXGAMEAWARDS-26BSM",
+    "source": "https://doxa.pro/events/game-awards-best-score-and-music",
+    "quotedAt": "2026-11-24T23:39:33.160Z",
+    "percent": {
+      "Grand Theft Auto 6": 58,
+      "The Legend of Zelda: Ocarina of Time": 31,
+      "Ace Combat 8: Wings of Theve": 12,
+      "Phantom Blade Zero": 2,
+      "Mixtape": 1
+    }
+  },
+  "Best Audio Design": {
+    "event": "KXGAMEAWARDS-BAD",
+    "source": "https://doxa.pro/events/2026-game-awards-best-audio-design",
+    "quotedAt": "2026-11-24T04:59:47.325Z",
+    "percent": {
+      "Grand Theft Auto 6": 73,
+      "Resident Evil Requiem": 10,
+      "Ace Combat 8: Wings of Theve": 9,
+      "Star Wars: Galactic Racer": 7,
+      "Control Resonant": 6
+    }
+  },
+  "Best Performance": {
+    "event": "KXGAMEAWARDS-26BP",
+    "source": "https://doxa.pro/events/2026-game-awards-best-performance",
+    "quotedAt": "2026-11-24T23:21:31.781Z",
+    "percent": {
+      "Manni L. Perez, Grand Theft Auto 6": 52,
+      "Angela Sant'Albano, Resident Evil Requiem": 43,
+      "Patrick Gibson, 007 First Light": 3,
+      "Rahul Kohli, Saros": 1,
+      "Liam McIntyre, Marvel's Wolverine": 1
+    }
+  },
+  "Games for Impact": {
+    "event": "KXGAMEAWARDS-26GFI",
+    "source": "https://doxa.pro/events/KXGAMEAWARDS-26GFI",
+    "quotedAt": "2026-11-24T00:45:34.767Z",
+    "percent": {
+      "Mixtape": 28,
+      "Big Walk": 27,
+      "Cairn": 17,
+      "Life is Strange: Reunion": 13,
+      "Forever Ago": 8,
+      "Lily's World XD": 7
+    }
+  },
+  "Innovation in Accessibility": {
+    "event": "KXGAMEAWARDS-26IA",
+    "source": "https://doxa.pro/events/KXGAMEAWARDS-26IA",
+    "quotedAt": "2026-11-24T04:32:50.900Z",
+    "percent": {
+      "Forza Horizon 6": 92,
+      "Marvel's Wolverine": 14,
+      "Rhythm Heaven Groove": 3,
+      "Assassin's Creed Black Flag Resynced": 2,
+      "Gears of War: E-Day": 1
+    }
+  },
+  "Best Ongoing Game": {
+    "event": "KXGAMEAWARDS-26BOG",
+    "source": "https://doxa.pro/events/KXGAMEAWARDS-26BOG",
+    "quotedAt": "2026-11-24T16:19:39.235Z",
+    "percent": {
+      "No Man's Sky": 34,
+      "Arc Raiders": 28,
+      "The Witcher 3: Wild Hunt": 24,
+      "Fortnite": 10,
+      "Final Fantasy XIV": 6
+    }
+  },
+  "Best Community Support": {
+    "event": "KXGAMEAWARDS-26BCS",
+    "source": "https://doxa.pro/events/KXGAMEAWARDS-26BCS",
+    "quotedAt": "2026-11-23T23:35:22.584Z",
+    "percent": {
+      "The Witcher 3: Wild Hunt": 46,
+      "Warframe": 40,
+      "Crimson Desert": 33,
+      "No Man's Sky": 19,
+      "Helldivers 2": 1
+    }
+  },
+  "Best Independent Game": {
+    "event": "KXGAMEAWARDS-BIG",
+    "source": "https://doxa.pro/events/game-awards-best-independent-game",
+    "quotedAt": "2026-11-24T16:48:57.931Z",
+    "percent": {
+      "Big Walk": 68,
+      "Mina the Hollower": 26,
+      "Mewgenics": 8,
+      "Cairn": 2,
+      "Denshattack!": 1
+    }
+  },
+  "Best Debut Indie Game": {
+    "event": "KXGAMEAWARDS-26BDIG",
+    "source": "https://doxa.pro/events/KXGAMEAWARDS-26BDIG",
+    "quotedAt": "2026-11-24T18:35:45.955Z",
+    "percent": {
+      "Esoteric Ebb": 33,
+      "Orbitals": 31,
+      "Dressmaker": 26,
+      "Replaced": 12,
+      "Silver Pines": 10
+    }
+  },
+  "Best Mobile Game": {
+    "event": "KXGAMEAWARDS-BMOB",
+    "source": "https://doxa.pro/events/2026-game-awards-best-mobile-game",
+    "quotedAt": "2026-11-24T16:18:33.328Z",
+    "percent": {
+      "Arknights: Endfield": 59,
+      "Where Winds Meet": 16,
+      "Monster Hunter Outlanders": 11,
+      "Neverness to Everness": 6,
+      "Pokémon Champions": 3
+    }
+  },
+  "Best VR/AR Game": {
+    "event": "KXGAMEAWARDS-26BVR",
+    "source": "https://doxa.pro/events/KXGAMEAWARDS-26BVR",
+    "quotedAt": "2026-11-21T21:38:11.255Z",
+    "percent": {
+      "Thief VR: Legacy of Shadow": 32,
+      "Forefront": 22,
+      "Into the Radius 2": 19,
+      "Little Nightmares VR: Altered Echoes": 18,
+      "Teenage Mutant Ninja Turtles: Empire City": 12
+    }
+  },
+  "Best Action Game": {
+    "event": "KXGAMEAWARDS-26BAG",
+    "source": "https://doxa.pro/events/2026-game-awards-best-action-game",
+    "quotedAt": "2026-11-25T00:07:16.392Z",
+    "percent": {
+      "Phantom Blade Zero": 86,
+      "Saros": 8,
+      "Onimusha: Way of the Sword": 4,
+      "Ace Combat 8: Wings of Theve": 3,
+      "Gears of War: E-Day": 2
+    }
+  },
+  "Best Action/Adventure Game": {
+    "event": "KXGAMEAWARDS-26BAAG",
+    "source": "https://doxa.pro/events/KXGAMEAWARDS-26BAAG",
+    "quotedAt": "2026-11-24T21:11:30.729Z",
+    "percent": {
+      "Grand Theft Auto 6": 71,
+      "The Legend of Zelda: Ocarina of Time": 22,
+      "Resident Evil Requiem": 9,
+      "Pragmata": 1,
+      "Control Resonant": 1,
+      "007 First Light": 1
+    }
+  },
+  "Best Role Playing Game": {
+    "event": "KXGAMEAWARDS-26BRPG",
+    "source": "https://doxa.pro/events/KXGAMEAWARDS-26BRPG",
+    "quotedAt": "2026-11-24T18:39:13.397Z",
+    "percent": {
+      "Fire Emblem Fortune's Weave": 48,
+      "The Blood of Dawnwalker": 31,
+      "Trails in the Sky 2nd Chapter": 13,
+      "Monster Hunter Stories 3: Twisted Reflection": 8,
+      "Final Fantasy Resonance": 5
+    }
+  },
+  "Best Fighting Game": {
+    "event": "KXGAMEAWARDS-26BFG",
+    "source": "https://doxa.pro/events/KXGAMEAWARDS-26BFG",
+    "quotedAt": "2026-11-24T17:40:20.534Z",
+    "percent": {
+      "Marvel Tōkon: Fighting Souls": 88,
+      "Avatar Legends: The Fighting Game": 9,
+      "Invincible VS": 4,
+      "2XKO": 3,
+      "My Hero Academia: All's Justice": 1
+    }
+  },
+  "Best Family Game": {
+    "event": "KXGAMEAWARDS-26BFAM",
+    "source": "https://doxa.pro/events/KXGAMEAWARDS-26BFAM",
+    "quotedAt": "2026-11-24T05:39:05.421Z",
+    "percent": {
+      "Pokémon Pokopia": 50,
+      "Big Walk": 33,
+      "Lego Batman: Legacy of the Dark Knight": 9,
+      "Nintendo Switch Sports Resort": 8,
+      "Yoshi and the Mysterious Book": 8
+    }
+  },
+  "Best Sim/Strategy Game": {
+    "event": "KXGAMEAWARDS-26BSS",
+    "source": "https://doxa.pro/events/KXGAMEAWARDS-26BSS",
+    "quotedAt": "2026-11-24T20:23:37.540Z",
+    "percent": {
+      "Pokémon Pokopia": 59,
+      "Mewgenics": 38,
+      "Slay the Spire 2": 12,
+      "Star Wars Zero Company": 6,
+      "Planet Zoo 2": 3
+    }
+  },
+  "Best Sports/Racing Game": {
+    "event": "KXGAMEAWARDS-26BSRG",
+    "source": "https://doxa.pro/events/KXGAMEAWARDS-26BSRG",
+    "quotedAt": "2026-11-25T00:08:06.852Z",
+    "percent": {
+      "Forza Horizon 6": 71,
+      "Star Wars: Galactic Racer": 30,
+      "Nintendo Switch Sports Resort": 1,
+      "Screamer": 1,
+      "EA Sports FC 27": 1
+    }
+  },
+  "Best Multiplayer Game": {
+    "event": "KXGAMEAWARDS-BMUL",
+    "source": "https://doxa.pro/events/2026-game-awards-best-multiplayer",
+    "quotedAt": "2026-11-24T21:08:43.813Z",
+    "percent": {
+      "Big Walk": 75,
+      "Meccha Chameleon": 19,
+      "Call of Duty: Modern Warfare 4": 9,
+      "Gears of War: E-Day": 1,
+      "Orbitals": 1,
+      "Marathon": 1
+    }
+  },
+  "Best Adaptation": {
+    "event": "KXGAMEAWARDS-26BA",
+    "source": "https://doxa.pro/events/2026-game-awards-best-adaptation",
+    "quotedAt": "2026-11-24T13:20:51.002Z",
+    "percent": {
+      "Resident Evil": 68,
+      "Fallout Season 2": 28,
+      "Cyberpunk: Edgerunners 2": 11,
+      "Mortal Kombat II": 1,
+      "The Super Mario Galaxy Movie": 1
+    }
+  },
+  "Most Anticipated Game": {
+    "event": "KXGAMEAWARDS-26MAG",
+    "source": "https://doxa.pro/events/KXGAMEAWARDS-26MAG",
+    "quotedAt": "2026-11-24T19:06:55.227Z",
+    "percent": {
+      "The Witcher 4": 61,
+      "Final Fantasy VII Revelation": 18,
+      "God of War Laufey": 14,
+      "Resident Evil Veronica": 2,
+      "Fable": 1
+    }
+  },
+  "Content Creator of the Year": {
+    "event": "KXGAMEAWARDS-26CCY",
+    "source": "https://doxa.pro/events/KXGAMEAWARDS-26CCY",
+    "quotedAt": "2026-11-24T19:11:42.942Z",
+    "percent": {
+      "iShowSpeed": 84,
+      "OhnePixel": 12,
+      "CDawg": 8,
+      "Cellbit": 4,
+      "LilSimsie": 3
+    }
+  },
+  "Best User Creation": {
+    "event": "KXGAMEAWARDS-26BUC",
+    "source": "https://doxa.pro/events/KXGAMEAWARDS-26BUC",
+    "quotedAt": "2026-11-24T16:26:23.818Z",
+    "percent": {
+      "Nopixel V": 38,
+      "Create Aeronautics": 24,
+      "A Dream of Silence: Revamped": 16,
+      "Star Wars Droid Tycoon": 16,
+      "TTK Testing": 15
+    }
+  },
+  "Best Esports Game": {
+    "event": "KXGAMEAWARDS-26BEG",
+    "source": "https://doxa.pro/events/KXGAMEAWARDS-26BEG",
+    "quotedAt": "2026-11-23T21:06:51.396Z",
+    "percent": {
+      "Counter-Strike 2": 48,
+      "League of Legends": 26,
+      "Valorant": 15,
+      "DOTA 2": 8,
+      "Mobile Legends: Bang Bang": 7
+    }
+  },
+  "Best Esports Athlete": {
+    "event": "KXGAMEAWARDS-26BEA",
+    "source": "https://doxa.pro/events/KXGAMEAWARDS-26BEA",
+    "quotedAt": "2026-11-19T11:00:38.481Z",
+    "percent": {
+      "Chovy": 30,
+      "ZywOo": 23,
+      "Donk": 18,
+      "Erde": 17,
+      "Yatoro": 15
+    }
+  },
+  "Best Esports Team": {
+    "event": "KXGAMEAWARDS-26BET",
+    "source": "https://doxa.pro/events/KXGAMEAWARDS-26BET",
+    "quotedAt": "2026-11-23T23:36:43.344Z",
+    "percent": {
+      "Team Vitality, Counter-Strike 2": 31,
+      "Team Falcons, Counter-Strike 2": 18,
+      "Gen.G, League of Legends": 14,
+      "LOUD, Valorant": 13,
+      "Team Spirit, DOTA 2": 11,
+      "Team Falcons, Rocket League": 9
+    }
+  }
+}

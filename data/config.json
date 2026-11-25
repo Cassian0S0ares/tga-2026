@@ -1,0 +1,30 @@
+{
+  "players": [
+    {
+      "name": "Cr4ni0",
+      "previousName": "Cassiano"
+    },
+    {
+      "name": "Ponyo",
+      "previousName": "Amigo 1"
+    },
+    {
+      "name": "Vik",
+      "previousName": "Amigo 2"
+    }
+  ],
+  "adminToken": "troque-este-token",
+  "lockAt": "2026-12-10T21:30:00-03:00",
+  "port": 3000,
+  "upsetMultiplier": 3,
+  "weights": {
+    "game-of-the-year": 3,
+    "best-game-direction": 2,
+    "best-narrative": 2,
+    "best-art-direction": 2,
+    "best-score-and-music": 2,
+    "best-independent-game": 2,
+    "best-performance": 2
+  },
+  "defaultWeight": 1
+}
