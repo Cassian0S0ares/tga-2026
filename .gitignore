@@ -1,2 +1,5 @@
 data/db.json
 data/db.json.tmp
+data/db.demo.json
+data/db.demo.json.tmp
+.playwright-mcp/

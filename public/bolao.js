@@ -27,6 +27,30 @@ function deadline() {
   return format({day:'numeric',month:'short'}).replace(/\.$/,'') + ' às ' + format({hour:'2-digit',minute:'2-digit'}) + ' (Brasília)';
 }
 
+const pad = n => String(n).padStart(2,'0');
+let lockRefresh = false;
+
+function countdownParts() {
+  const left = Math.max(0, Math.floor((new Date(state.lockAt).getTime() - Date.now()) / 1000));
+  return [[Math.floor(left / 86400),'dias'],[pad(Math.floor(left / 3600) % 24),'horas'],[pad(Math.floor(left / 60) % 60),'min'],[pad(left % 60),'seg']];
+}
+
+function countdown() {
+  if (state.locked) return '';
+  return '<div class="countdown" role="timer" aria-label="Tempo até o encerramento dos palpites">' +
+    countdownParts().map(([value,unit]) => '<span><b>' + value + '</b>' + unit + '</span>').join('') + '</div>';
+}
+
+function tickCountdown() {
+  const el = document.querySelector('.countdown');
+  if (!el || !state || state.locked) return;
+  countdownParts().forEach(([value], i) => { el.children[i].firstChild.textContent = value; });
+  if (Date.now() < new Date(state.lockAt).getTime() || lockRefresh) return;
+  lockRefresh = true; // prazo acabou: busca o estado encerrado no servidor
+  api('/api/state').then(latest => { state = latest; render(); }).catch(() => {}).finally(() => { lockRefresh = false; });
+}
+setInterval(tickCountdown, 1000);
+
 function render() {
   if (!state) return;
   const page = route();
@@ -62,7 +86,7 @@ function nominees(c, editable = false) {
 }
 
 function home() {
-  return '<section class="hero"><div class="wrap"><p class="overline">The Game Awards · 2026</p><h1>Bolão do<em>Game Awards</em></h1><p class="hero-copy">Quem leva o troféu na noite de 10 de dezembro?</p><div class="actions"><a class="btn" href="#palpites">' + icon('ticket') + (state.locked ? 'Ver palpites' : 'Votar em grupo') + '</a><a class="subtle" href="#placar">Ver placar</a></div></div></section>' +
+  return '<section class="hero"><div class="wrap"><p class="overline">The Game Awards · 2026</p><h1>Bolão do<em>Game Awards</em></h1><p class="hero-copy">Quem leva o troféu na noite de 10 de dezembro?</p>' + countdown() + '<div class="actions"><a class="btn" href="#palpites">' + icon('ticket') + (state.locked ? 'Ver palpites' : 'Votar em grupo') + '</a><a class="subtle" href="#placar">Ver placar</a></div></div></section>' +
     '<div class="eventline"><div class="wrap"><span class="status"><i class="dot"></i>' + (state.locked ? 'Palpites encerrados' : 'Palpites abertos') + '</span><span>' + icon('calendar') + 'Prazo · ' + deadline() + '</span><span>' + icon('trophy') + state.categories.length + ' categorias</span></div></div>' +
     '<div class="wrap"><section class="section"><div class="heading"><h2>Participantes</h2><small>' + state.players.length + ' jogadores</small></div>' + participants() + '</section>' +
     '<section class="section"><div class="heading"><h2>Os indicados</h2></div><div class="filters">' + categorySelect('feature',featuredIndex) + '</div>' + nominees(state.categories[featuredIndex]) + '</section></div>';
@@ -212,7 +236,7 @@ function ceremony() {
   const heading = intro('The Game Awards · 2026','Cerimônia');
   if (!state.locked || !state.picks) {
     return '<section class="wrap inner-page">' + heading + '<p class="summary">A revelação dos palpites e as simulações abrem em ' +
-      deadline() + ', quando a votação encerrar.</p><a class="subtle" href="#palpites">Votação</a></section>';
+      deadline() + ', quando a votação encerrar.</p>' + countdown() + '<div class="actions"><a class="subtle" href="#palpites">Votação</a></div></section>';
   }
   const c = ballotCategories[ceremonyIndex];
   const winner = state.winners[c.id];
@@ -414,6 +438,7 @@ async function init() {
   state = initial;
   ballotCategories = [...state.categories].reverse();
   art = images;
+  if (state.demo) document.querySelector('.mast').insertAdjacentHTML('afterend', '<div class="demo-bar" role="note"><div class="wrap"><i class="dot"></i>Modo demonstração · palpites aleatórios, votação já encerrada. Nada aqui afeta o bolão real.</div></div>');
   const last = ballotCategories.findIndex(c => c.id === localStorage.tgaGroupCategory);
   if (last >= 0 && Object.values(state.progress).some(n => n > 0)) categoryIndex = last;
   else if (state.voters) categoryIndex = Math.max(0, nextPendingCategory(0));

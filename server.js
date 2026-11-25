@@ -4,8 +4,10 @@ const fs = require("fs");
 const path = require("path");
 
 const ROOT = __dirname;
-const DB = path.join(ROOT, "data", "db.json"); // { picks: {player:{catId:nominee}}, winners: {catId:nominee} }
+const DEMO = process.argv.includes("--demo"); // ensaio da cerimônia: banco separado, palpites aleatórios, votação encerrada
+const DB = path.join(ROOT, "data", DEMO ? "db.demo.json" : "db.json"); // { picks: {player:{catId:nominee}}, winners: {catId:nominee} }
 const config = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "config.json"), "utf8"));
+const PORT = config.port + (DEMO ? 1 : 0);
 const slug = (s) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 const PT = {
   "Game of the Year": "Jogo do Ano", "Best Game Direction": "Melhor Direção", "Best Narrative": "Melhor Narrativa",
@@ -60,7 +62,13 @@ const saveDb = (db) => { // escrita atômica
   fs.writeFileSync(DB + ".tmp", JSON.stringify(db, null, 2));
   fs.renameSync(DB + ".tmp", DB);
 };
-const locked = () => Date.now() >= new Date(config.lockAt).getTime();
+const locked = () => DEMO || Date.now() >= new Date(config.lockAt).getTime();
+
+if (DEMO) { // cada início do modo demo recomeça do zero
+  const pick = (list) => list[Math.floor(Math.random() * list.length)];
+  const picks = Object.fromEntries(config.players.map(p => [p.name, Object.fromEntries(categories.map(c => [c.id, pick(c.nominees)]))]));
+  saveDb({ picks, winners: {} });
+}
 
 function score(db) {
   const out = {};
@@ -82,7 +90,7 @@ function state(db) {
     categories, players: config.players.map((p) => p.name),
     renamedPlayers: Object.fromEntries(config.players.filter(p => p.previousName).map(p => [p.previousName, p.name])),
     voters: Object.fromEntries(categories.map(c => [c.id, votersFor(db, c.id)])),
-    lockAt: config.lockAt, upset: UPSET, locked: isLocked, progress,
+    lockAt: config.lockAt, upset: UPSET, locked: isLocked, demo: DEMO, progress,
     winners: db.winners, scores: score(db),
     // palpites alheios só aparecem depois do prazo (evita copiar)
     picks: isLocked ? db.picks : null,
@@ -180,4 +188,4 @@ http.createServer(async (req, res) => {
     }
     send(res, 404, { error: "não encontrado" });
   } catch (e) { send(res, 500, { error: String(e.message || e) }); }
-}).listen(config.port, () => console.log(`Bolão TGA 2026 em http://localhost:${config.port}`));
+}).listen(PORT, () => console.log(`Bolão TGA 2026${DEMO ? " (modo demo)" : ""} em http://localhost:${PORT}`));
